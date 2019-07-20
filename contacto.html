@@ -52,10 +52,32 @@
   <div class="container-fluid"><h1>CONTACTANOS</h1></div>
   <hr size="1px" color="black" />
   <div class="row">
-    <article class="col-lg-3 col-md-12">
-      <img class="img-fluid" src="img/dany.jpg" alt="Dany Palieres">
-      <h2>Formulario</h2><p>Lider/Voz</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    <article class="col-lg-6 col-md-12">
+      <div id="formulario">
+     
+  <form id="FormContacto" action="mailto:belenbsas@yahoo.com.ar" method="POST">
+    
+    <div class="campoNombre" >
+    <label for="1">
+      <h2>NOMBRE</h2>
+      <input type="text" name="nombre" id="1" required="">
+    </label>
+  </div>
+
+  <div class="campo">
+    <label for="email">
+      <h2>EMAIL</h2>
+      <input type="email" name="email" id="email" placeholder="ej: nombre@email.com" required="" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$">
+    </label>
+  </div>
+
+    <div><h2>MENSAJE</h2>
+    <textarea name="mensaje" minlength="10" maxlength="150" required=""></textarea>
+    </div>
+
+    <div>
+      <input type="submit" value="Enviar">
+    </div>
   </article>
   </section>
 
