@@ -54,6 +54,8 @@ font-family: 'Oswald', sans-serif;
 	 background-color: black;
 }
 
+
+
 .banda{
 	padding: 25px;
 	font-family: 'Roboto Slab', serif;
@@ -130,4 +132,74 @@ p{
 .menu ul li a:hover{
 	color: #bc2025;
 	background-color: white;
+}
+
+/*FORMULARIO*/
+
+.textoform{
+	font-family: 'Oswald', sans-serif;
+   color:#bc2025;
+   font-size: 1.4em;
+}
+
+                    
+#formulario {                    
+	width: 100%;                    
+	/*padding: 1em;*/                    
+	}                    
+                    
+#FormContacto input, #FormContacto textarea {
+	background: black;
+	width:100%; 
+	/*margin-bottom: 1em;*/
+	padding: 0.5em;
+	box-sizing: border-box;
+	border: 2px solid darkgrey;
+		
+}
+
+#FormContacto input[type="submit"]{
+	width: 40%;
+	background: #5c5c5c;
+	color: white;
+	text-align: center;
+
+}
+
+#FormContacto input[type="submit"]:hover{
+	background: #bc2025;}
+
+#FormContacto:valid{
+	background: white;
+}
+#FormContacto:invalid{
+	background: lightgrey;
+	}
+
+
+
+/*Media Queries*/
+/* Small / 0px - 600px */
+@media screen and (min-width: 0px) and (max-width: 600px){
+	.slide{
+		padding-top: 120px;}
+	.menu{
+	height: 85px;
+	}
+	.logo{
+		text-align: center;
+		width: 100%;
+	}
+
+} 
+/*Medium / 601px - 900px */
+@media screen and (min-width: 601px) and (max-width: 900px){
+	.slide{
+		padding-top: 130px;
+	}
+	
+	.logo{
+		text-align: center;
+		width: 50%;
+	}
 }
