@@ -39,21 +39,38 @@ font-family: 'Oswald', sans-serif;
 	padding-right: 50px;
 }
 
+@keyframes pal1{
+		0%{	opacity: 0;
+		
+		}
+		
+		100%{opacity: 1;
+					
+		}
+	}
+
 .logo{width:30%;
 	background-color: black;
+	animation-name: pal1;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	/*animation-iteration-count: infinite;*/
+	animation-delay: 1s;
 	
 }
 
 .slide{
 	  width: 100%;
 	  padding-top: 75px;
-	  /*height: 500px;
-	  /*max-height: 200px;
-	  /*margin-left: auto;
-	  margin-right: auto;*/
-	 background-color: black;
+	  background-color: black;
 }
 
+.slide2{
+	  width: 100%;
+	  padding-top: 75px;
+	  background-color: black;
+	 
+}
 
 
 .banda{
@@ -62,8 +79,8 @@ font-family: 'Oswald', sans-serif;
 	text-align: left;
 }
 
-.visor{max-height: 400px;
-}
+/*.visor{max-height: 400px;
+}*/
 
 .redes{
 	height: 30px;
@@ -132,14 +149,19 @@ p{
 .menu ul li a:hover{
 	color: #bc2025;
 	background-color: white;
+	opacity: 1;
+	animation-name: pal1;
+	animation-duration: 1s;
 }
+
+
 
 /*FORMULARIO*/
 
 .textoform{
-	font-family: 'Oswald', sans-serif;
-   color:#bc2025;
-   font-size: 1.4em;
+    font-family: 'Oswald', sans-serif;
+    color:#bc2025;
+    font-size: 1.4em;
 }
 
                     
@@ -183,6 +205,8 @@ p{
 @media screen and (min-width: 0px) and (max-width: 600px){
 	.slide{
 		padding-top: 120px;}
+	.slide2{
+		padding-top: 220px;}
 	.menu{
 	height: 85px;
 	}
@@ -190,16 +214,35 @@ p{
 		text-align: center;
 		width: 100%;
 	}
+	/*body{background: green;
+	}*/
 
 } 
+
 /*Medium / 601px - 900px */
 @media screen and (min-width: 601px) and (max-width: 900px){
 	.slide{
-		padding-top: 130px;
-	}
+		padding-top: 130px;}
+
+	.slide2{
+		padding-top: 210px;}
+
+	.menu{
+	height: 100px;}
 	
 	.logo{
 		text-align: center;
-		width: 50%;
+		width: 50%;	}
+		body{background: red;
 	}
+}
+
+/*Large / 901px - 1200px*/
+@media screen and (min-width: 901px) and (max-width: 1200px){
+	.slide2{
+		padding-top: 120px;}
+
+     body{background: darkblue;
+	}
+
 }
